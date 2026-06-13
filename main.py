@@ -1,16 +1,3 @@
-"""
-MediScan - Smart Medical Assistant
-====================================
-Features:
-  1. Symptom Checker → recommends the right scan (no unnecessary radiation)
-  2. Pill Scanner     → identify medicine from a photo (base64 upload)
-  3. AI Chatbot       → guides you to the right doctor / gives advice
-  4. Medicine Tracker → add meds, set times, mark doses, see streaks
-
-Run:  python3 mediscan_app.py
-Open: http://localhost:5050
-"""
-
 from flask import Flask, request, jsonify, render_template_string
 import json, sqlite3, base64, os, datetime, pathlib, re
 
